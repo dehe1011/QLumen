@@ -1,0 +1,127 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Program – QEpi 2026</title>
+  </head>
+  <body class="pt-16 md:pt-20">
+    <Navbar />
+
+    <!-- Hero Banner -->
+    <section
+      class="relative pt-32 pb-20 text-white text-center bg-cover bg-center bg-no-repeat"
+      style="background-image: url('/Ulm2.jpg');"
+    >
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Conference Program</h1>
+        <p class="text-base md:text-lg max-w-2xl mx-auto px-6">
+          Detailed overview of the 4-day schedule for QEpi 2026
+        </p>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto py-16 px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Preliminary Schedule</h2>
+
+      <!-- Row 1: Monday + Tuesday -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+        {["Monday 18th", "Tuesday 19th"].map((day) => (
+          <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 h-fit">
+            <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 text-center">{day}</h3>
+            <div class="overflow-x-auto flex-grow">
+              <table class="w-full table-fixed border-t border-gray-200 text-sm md:text-base">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="py-2 px-4 text-left font-semibold text-gray-700 border-b w-24">
+                      Time
+                    </th>
+                    <th class="py-2 px-4 text-left font-semibold text-gray-700 border-b">
+                      Session
+                    </th>
+                    <th class="py-2 px-4 text-left font-semibold text-gray-700 border-b w-40">
+                      Speaker
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[...Array(12)].map((_, i) => (
+                    <tr class="hover:bg-indigo-50 transition">
+                      <td class="py-2 px-4 text-gray-800 border-b border-gray-100">HH:MM</td>
+                      <td class="py-2 px-4 text-gray-700 border-b border-gray-100">
+                        Session title placeholder
+                      </td>
+                      <td class="py-2 px-4 text-gray-600 border-b border-gray-100 italic">—</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Row 2: Wednesday + Thursday -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+        {["Wednesday 20th", "Thursday 21st"].map((day) => (
+          <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 h-fit">
+            <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 text-center">{day}</h3>
+            <div class="overflow-x-auto flex-grow">
+              <table class="w-full table-fixed border-t border-gray-200 text-sm md:text-base">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="py-2 px-4 text-left font-semibold text-gray-700 border-b w-24">
+                      Time
+                    </th>
+                    <th class="py-2 px-4 text-left font-semibold text-gray-700 border-b">
+                      Session
+                    </th>
+                    <th class="py-2 px-4 text-left font-semibold text-gray-700 border-b w-40">
+                      Speaker
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[...Array(12)].map((_, i) => (
+                    <tr class="hover:bg-indigo-50 transition">
+                      <td class="py-2 px-4 text-gray-800 border-b border-gray-100">HH:MM</td>
+                      <td class="py-2 px-4 text-gray-700 border-b border-gray-100">
+                        Session title placeholder
+                      </td>
+                      <td class="py-2 px-4 text-gray-600 border-b border-gray-100 italic">—</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        ))}
+      </div>
+
+      <p class="text-center text-gray-500 italic mt-12">
+        The schedule is subject to change. Speaker names and final timings will be updated soon.
+      </p>
+    </section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-6">
+  <p class="mb-2">
+    QEpi 2026 – Quantum Effects on Epigenetic Regulation in Living Systems
+  </p>
+
+  <div class="flex items-center justify-center space-x-3">
+    <p>Funded by – Carl-Zeiss-Stiftung</p>
+    <img
+      src="/CZS_RGB_pos_Logo.png"
+      alt="Carl Zeiss Stiftung Logo"
+      class="h-11 w-auto"
+    />
+  </div>
+</footer>
+  </body>
+</html>

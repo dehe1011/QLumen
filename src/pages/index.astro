@@ -1,0 +1,261 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QEpi 2026 – Quantum Effects on Epigenetic Regulation in Living Systems</title>
+    <meta
+      name="description"
+      content="Official website of QEpi 2026 — an interdisciplinary conference on Quantum Effects on Epigenetic Regulation in Living Systems, held at Schloss Reisensburg, Germany."
+    />
+  </head>
+  <body class="pt-16 md:pt-20">
+    <Navbar />
+
+    <!-- Hero Section with embedded intro -->
+    <section
+      class="relative flex flex-col justify-end items-center text-center text-white bg-cover bg-center bg-no-repeat min-h-[80vh]"
+      style="background-image: url('/Ulm2.jpg');"
+    >
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <div class="relative z-10 max-w-3xl px-6 pb-24">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+          QEpi 2026
+        </h1>
+        <p class="text-lg md:text-xl mb-6 text-gray-100">
+          <strong>Quantum Effects on Epigenetic Regulation in Living Systems</strong>
+          <br />
+          <span class="text-gray-200"
+            >18–21 May 2026 · Reisensburg Castle · Günzburg, Germany</span
+          >
+        </p>
+        <a
+          href="/application"
+          class="inline-block bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition"
+        >
+          Apply Now
+        </a>
+      </div>
+
+      <!-- Overlayed Welcome Message -->
+      <div
+        class="relative z-10 bg-black/40 backdrop-blur-sm text-white text-center px-8 py-10 rounded-2xl shadow-lg max-w-3xl mb-20"
+      >
+        <h2 class="text-3xl font-bold mb-4">Welcome to QEpi 2026</h2>
+        <p class="text-lg leading-relaxed text-gray-100">
+          QEpi 2026 is an interdisciplinary conference exploring the role of
+          <strong>quantum phenomena</strong> in
+          <strong>epigenetic regulation</strong> and living systems.
+          This event brings together researchers in physics, chemistry and biology to discuss and collaborate for four days, 
+          in order to define the future line of investigation of quantum phenomena in epigenetics.
+        </p>
+      </div>
+    </section>
+
+    <!-- Navigation Grid -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">
+          Learn more about the conference
+        </h2>
+
+        <!-- Two-column layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+
+          <!-- LEFT: Poster -->
+          <div class="flex justify-center h-full">
+            <img
+              src="/QEpi2026Poster.png"  
+              alt="QEpi 2026 conference poster"
+              class="w-full max-w-md h-full object-contain shadow-xl bg-white"
+            />
+          </div>
+
+          <!-- RIGHT: Utility buttons -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center">
+
+            <a
+              href="/about"
+              class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transition flex flex-col items-center justify-center"
+            >
+              <img
+                src="/icons/circle-question-mark.svg"
+                alt="About icon"
+                class="w-12 h-12 mb-4 opacity-80"
+              />
+              <h3 class="text-xl font-semibold mb-2">About</h3>
+              <p class="text-gray-600">
+                Learn about QEpi 2026, its research focus and the venue.
+              </p>
+            </a>
+
+            <a
+              href="/speakers"
+              class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transition flex flex-col items-center justify-center"
+            >
+              <img
+                src="/icons/atom.svg"
+                alt="Speakers icon"
+                class="w-12 h-12 mb-4 opacity-80"
+              />
+              <h3 class="text-xl font-semibold mb-2">Invited Speakers</h3>
+              <p class="text-gray-600">
+                List of invited speakers attending QEpi 2026.
+              </p>
+            </a>
+
+            <a
+              href="/program2"
+              class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transition flex flex-col items-center justify-center"
+            >
+              <img
+                src="/icons/calendar-clock.svg"
+                alt="Program icon"
+                class="w-12 h-12 mb-4 opacity-80"
+              />
+              <h3 class="text-xl font-semibold mb-2">Program</h3>
+              <p class="text-gray-600">
+                Scientific sessions and networking activities.
+              </p>
+            </a>
+
+            <a
+              href="mailto:mirko.rossini@uni-ulm.de"
+              class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transition flex flex-col items-center justify-center"
+            >
+              <img
+                src="/icons/user-pen.svg"
+                alt="Contact icon"
+                class="w-12 h-12 mb-4 opacity-80"
+              />
+              <h3 class="text-xl font-semibold mb-2">Contact</h3>
+              <p class="text-gray-600">
+                Contact the organizing committee.
+              </p>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-white py-20 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Two cards side by side -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+          <!-- LEFT CARD — Scientific Committee -->
+          <div class="bg-gray-50 rounded-2xl shadow-lg p-12 transition-all duration-300">
+
+            <h3 class="text-center text-3xl font-semibold text-indigo-700 mb-12">
+              Scientific Committee
+            </h3>
+
+            <!-- GRID: 3 on top, 3 on bottom -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-14 items-start text-left">
+
+              <!-- PERSON 1 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Dr. Mirko Rossini</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  Ulm University,<br>Germany
+                </p>
+              </div>
+
+              <!-- PERSON 2 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Prof. Joachim Ankerhold</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  Ulm University,<br>Germany
+                </p>
+              </div>
+
+              <!-- PERSON 3 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Prof. Ole Ammerpohl</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  Ulm University,<br>Germany
+                </p>
+              </div>
+
+              <!-- SOFT ROW DIVIDER (only shows on MD and above) -->
+              <div class="md:col-span-3 border-t border-gray-200"></div>
+
+              <!-- PERSON 4 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Prof. Sven Rau</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  Ulm University,<br>Germany
+                </p>
+              </div>
+
+              <!-- PERSON 5 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Prof. Rosa Di Felice</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  University of Southern California,<br>Los Angeles
+                  and CNR-NANO, Modena
+                </p>
+              </div>
+
+              <!-- PERSON 6 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Prof. Constantinos Simserides</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  National and Kapodistrian University of Athens,<br>Greece
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- RIGHT CARD — Join QEpi 2026 -->
+          <div class="bg-gray-50 rounded-2xl shadow-lg p-10 flex flex-col justify-center text-center">
+
+            <h2 class="text-3xl font-bold mb-6">Join QEpi 2026</h2>
+
+            <p class="text-lg text-gray-700 mb-10 leading-relaxed">
+              Check how to apply and submit your application.
+            </p>
+
+            <a
+              href="/application"
+              class="inline-block bg-indigo-600 text-white font-semibold px-10 py-4 rounded-xl shadow-md hover:bg-indigo-700 transition w-fit mx-auto"
+            >
+              Submit Your Application
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-6">
+  <p class="mb-2">
+    QEpi 2026 – Quantum Effects on Epigenetic Regulation in Living Systems
+  </p>
+
+  <div class="flex items-center justify-center space-x-3">
+    <p>Funded by – Carl-Zeiss-Stiftung</p>
+    <img
+      src="/CZS_RGB_pos_Logo.png"
+      alt="Carl Zeiss Stiftung Logo"
+      class="h-11 w-auto"
+    />
+  </div>
+</footer>
+  </body>
+</html>

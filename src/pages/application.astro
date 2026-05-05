@@ -1,0 +1,88 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>How to Apply – QEpi 2026</title>
+  </head>
+  <body class="pt-16 md:pt-20">
+    <Navbar />
+
+    <!-- Hero -->
+    <section 
+      class="relative pt-32 pb-20 text-white text-center bg-cover bg-center bg-no-repeat" 
+      style="background-image: url('/Ulm2.jpg');"
+    >
+      <div class="absolute inset-0 bg-black/50"></div> <!-- semi-transparent overlay -->
+      <div class="relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Application</h1>
+        <p class="text-base md:text-lg max-w-2xl mx-auto px-6">
+          Follow these steps to apply for participating to <strong>QEpi 2026</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- Application Instructions -->
+    <section class="max-w-4xl mx-auto py-16 px-6">
+      <h2 class="text-2xl font-bold mb-6">Eligibility</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-8">
+        QEpi 2026 welcomes applications from <strong>graduate students, postdoctoral researchers, and professors</strong>
+        with expertises among quantum mechanics, chemistry and epigenetics, sharing a research interest into the interdisciplinary 
+        field bridging between quantum phenomena and epigenetics. 
+      </p>
+
+      <h2 class="text-2xl font-bold mb-6">Application Steps</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-8">
+        To apply, send an e-mail to 
+        <a href="mailto:mirko.rossini@uni-ulm.de" class="text-indigo-600 hover:underline">mirko(dot)rossini(at)uni-ulm.de</a> 
+        with subject: "QEpi2026 application - Name Surname" attaching a <strong> single PDF file </strong> including:
+      </p>
+      <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-8">
+        <li>A <strong> small abstract </strong> of the proposed long Contributed Talk, in <strong> max. 400 words </strong></li>
+        <li><strong> Limited list of publications (max 5) </strong> supporting the contribution and the applicant background.</li>
+      </ol>
+      <p class="text-lg text-gray-700 leading-relaxed mb-8">
+        Nine applicants will be selected to give a talk at the event, 
+        while 35 other participants will be selected to attend the conference as auditors.
+      </p>
+
+      <h2 class="text-2xl font-bold mb-6">Informations for Contributing Speakers</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-8">
+        Accepted contributing speakers should aim for 25 minute talks + 5 minutes of questions, 
+        and prepare a digital presentation in a standard format.
+      </p>
+
+      <h2 class="text-2xl font-bold mb-6">Important Deadlines</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+        <li><strong>Abstract submission:</strong> Extended to 27 April 2026</li>
+        <li><strong>Participation confirmation (upon selection):</strong> latest 28 April 2026</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mb-6">Selection Process</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-8">
+        Applications will be reviewed by the <strong>QEpi 2026 Scientific Board</strong>.  
+        The selection criteria include the relevance of the proposed contribution to the scopes of the conference, 
+        alongside with the relevance of the applicant in the same field of research. 
+      </p>
+    </section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-6">
+  <p class="mb-2">
+    QEpi 2026 – Quantum Effects on Epigenetic Regulation in Living Systems
+  </p>
+
+  <div class="flex items-center justify-center space-x-3">
+    <p>Funded by – Carl-Zeiss-Stiftung</p>
+    <img
+      src="/CZS_RGB_pos_Logo.png"
+      alt="Carl Zeiss Stiftung Logo"
+      class="h-11 w-auto"
+    />
+  </div>
+</footer>
+  </body>
+</html>

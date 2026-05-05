@@ -1,0 +1,161 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>About – QEpi 2026</title>
+    </head>
+    <body class="pt-16 md:pt-20">
+        <Navbar />
+
+        <!-- Hero -->
+        <section class="relative pt-32 pb-20 text-white text-center bg-cover bg-center bg-no-repeat" style="background-image: url('/Ulm2.jpg');">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">About QEpi 2026</h1>
+                <p class="text-base md:text-lg max-w-2xl mx-auto px-6">Topic, venue and general informations</p>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="max-w-4xl mx-auto py-16 px-6">
+            <h2 class="text-2xl font-bold mb-6">Fees and Registration</h2>
+
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                <!-- by the <strong> insert funding </strong> -->
+                The QEpi2026 conference is fully funded by the Carl Zeiss Stiftung (more details below). Partecipants must cover only the costs for the transportation
+                to reach the venue.
+            </p>
+
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                Partecipation is bound to the submission of an abstract for a Contributed Talk, of the duration of about 25 minutes plus 5 minutes of questions.
+                More details on the application process can be found
+                <a href="/application" class="text-indigo-600 font-medium hover:underline"> here</a>.
+            </p>
+
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                <strong>Travel support</strong> is available upon reasonable request in the form of a lump sum of maximum <strong
+                    >€300 for European participants</strong
+                > and <strong>€600 for non-European participants</strong>. Each request will be reviewed individually by the Organising Committee for approval,
+                and must be included in the body of the submission email, possibly including a specific travel plan.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-6">Topic Overview</h2>
+
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                The QEpi2026 conference, Quantum Effects on Epigenetic Regulation in Living Systems, brings together experts from diverse scientific disciplines
+                to explore the question: “Can quantum phenomena play a decisive role in regulatory processes in living systems, including epigenetic
+                mechanisms?”. We will discuss potential answers to this question from a truly interdisciplinary perspective. Although research progress and
+                experimental evidence have been produced in different disciplines in relation to this context, this line of inquiry has never been pursued in a
+                unified multi-disciplinary effort. On one hand, much work has focused on characterizing the electronic properties of DNA and various other
+                molecules to assess their potential utility for engineering applications. On the other hand, researchers have investigated the dynamics of
+                quantum processes along DNA segments in open environments from a purely theoretical perspective. What remains to be uncovered, is how these
+                quantum processes intersect with the complexity of biological regulation, particularly in the context of epigenetics.
+            </p>
+
+            <p class="text-lg text-gray-700 leading-relaxed mb-12">
+                This conference will be instrumental in creating solid foundations for an international collaboration in the pursuit of this line of research,
+                bringing together experts from quantum physics, chemistry, and epigenetics, and fostering multiple efforts in this largely unexplored field.
+            </p>
+
+            <!-- Venue Section -->
+            <h2 class="text-2xl font-bold mb-6">Conference Venue</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                The conference will take place in the <strong>Reisensburg Castle</strong>, a historic complex near Günzburg operated as an academic conference
+                center by <strong>Ulm University</strong> since 1997. The castle offers modern facilities surrounded by scenic Bavarian landscapes.
+            </p>
+
+            <!-- Embedded Google Map -->
+            <div class="mb-16">
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11431.45665265055!2d10.28558662512487!3d48.456069945278784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47994584ad0cfa81%3A0x965b0bc524d1dc67!2sSchloss%20Reisensburg%20Wissenschaftszentrum!5e0!3m2!1sit!2sde!4v1762178795193!5m2!1sit!2sde"
+                        width="850"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    >
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Two images of the venue -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <img src="/venue1.jpg" alt="Reisensburg Castle exterior view" class="rounded-xl shadow-lg w-full object-cover h-54 md:h-80" />
+                <img src="/venue2.jpg" alt="Reisensburg Castle conference room" class="rounded-xl shadow-lg w-full object-cover h-89 md:h-80" />
+            </div>
+
+            <h2 class="text-2xl font-bold mb-6">How to Reach the Venue</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                The conference will take place at <strong>Schloss Reisensburg</strong>, a conference and research center operated by
+                <strong>Ulm University</strong>. The castle is located on a hill just outside the town of
+                <strong>Günzburg</strong> in southern Germany, approximately halfway between <strong>Ulm</strong> and <strong>Augsburg</strong>.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-3">By Air</h3>
+            <p class="text-gray-700 mb-6">The closest international airports are:</p>
+            <ul class="list-disc list-inside text-gray-700 mb-6 space-y-1">
+                <li><strong>Munich International Airport (MUC)</strong> – about 120&nbsp;km east of Günzburg (approx. 1.5&nbsp;hours by car or train).</li>
+                <li><strong>Stuttgart Airport (STR)</strong> – about 110&nbsp;km west of Günzburg (approx. 1.5&nbsp;hours by car or train).</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-3">By Train</h3>
+            <p class="text-gray-700 mb-6">
+                The nearest train station is <strong>Günzburg</strong>, which is well connected by regional and intercity trains (IC, RE, RB) operated by <strong
+                    >Deutsche Bahn</strong
+                >. Direct trains run regularly from
+                <strong>Ulm</strong> (approx. 20 min), <strong>Munich</strong> (approx. 70 min), and <strong>Stuttgart</strong> (approx. 90 min). From Günzburg station,
+                Schloss Reisensburg is about <strong>4 km</strong> away.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-3">From Günzburg to Schloss Reisensburg</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-6 space-y-1">
+                <li><strong>By Taxi:</strong> Taxis are available at Günzburg station; the ride to the castle takes around 10 minutes.</li>
+                <li>
+                    <strong>By Bus:</strong> Local bus line **811 or 815** (direction Reisensburg) stops near the castle — check current schedules on <a
+                        href="https://www.ding.eu"
+                        target="_blank"
+                        class="text-indigo-600 hover:underline">www.ding.eu</a
+                    >.
+                </li>
+                <li><strong>On Foot:</strong> The walk from the station takes about 45–50 minutes (uphill in parts).</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-3">By Car</h3>
+            <p class="text-gray-700 mb-8">
+                Take the motorway <strong>A8 (Munich–Stuttgart)</strong> and exit at <strong>Günzburg</strong>. Follow signs toward <strong
+                    >Günzburg/Reisensburg</strong
+                > and then <strong>Schloss Reisensburg</strong>. Free parking is available directly next to the conference site.
+            </p>
+
+            <p class="text-gray-700 leading-relaxed">
+                The venue address for navigation systems is:<br />
+                <strong>Schloss Reisensburg, Reisensburg 1, 89312 Günzburg, Germany</strong>
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-6">About the Carl-Zeiss-Stiftung</h2>
+
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                The Carl-Zeiss-Stiftung funds science and teaching in the STEM disciplines of Science, Technology, Engineering, Mathematics. As a partner to
+                outstanding science, it provides funding opportunities for basic and applied research. The foundation was established in 1889 by Ernst Abbe in
+                Jena and is now one of the oldest and largest private research funding organizations in Germany. It is the sole owner of Carl Zeiss AG and
+                SCHOTT AG. The funding activities are made possible by dividends from the two foundation companies.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white text-center py-6">
+            <p class="mb-2">QEpi 2026 – Quantum Effects on Epigenetic Regulation in Living Systems</p>
+
+            <div class="flex items-center justify-center space-x-3">
+                <p>Funded by – Carl-Zeiss-Stiftung</p>
+                <img src="/CZS_RGB_pos_Logo.png" alt="Carl Zeiss Stiftung Logo" class="h-11 w-auto" />
+            </div>
+        </footer>
+    </body>
+</html>
