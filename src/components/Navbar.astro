@@ -7,35 +7,34 @@ const { pathname } = Astro.url;
         <div class="flex justify-between h-16 md:h-20 items-center">
             <!-- Logo + Title -->
             <div class="flex items-center space-x-3 pl-2">
-                <img src="/logo.png" alt="QEpi 2026 Logo" class="h-10 w-auto" />
-                <span class="text-indigo-600 font-bold text-lg"> QEpi 2026 – Quantum Effects on Epigenetic Regulation in Living Systems </span>
+                <img src="/images/logo.png" alt="Q-LUMEN Logo" class="h-10 w-auto" />
+                <span class="text-indigo-600 font-bold text-lg"> Q-LUMEN – The Quantum Leiden Ulm Milan ETH Network </span>
             </div>
 
             <!-- Navigation Links -->
             <div class="flex space-x-6 items-center pr-2">
                 <a href="/" class={`font-medium transition ${pathname === '/' ? 'text-indigo-600' : 'text-gray-700 hover:text-indigo-600'}`}> Home </a>
-                <a href="/about" class={`font-medium transition ${pathname === '/about' ? 'text-indigo-600' : 'text-gray-700 hover:text-indigo-600'}`}>
+                <a
+                    href="/subpages/about"
+                    class={`font-medium transition ${pathname === '/subpages/about' ? 'text-indigo-600' : 'text-gray-700 hover:text-indigo-600'}`}
+                >
                     About
                 </a>
-                <a href="/program2" class={`font-medium transition ${pathname === '/program2' ? 'text-indigo-600' : 'text-gray-700 hover:text-indigo-600'}`}>
+                <a
+                    href="/subpages/program"
+                    class={`font-medium transition ${pathname === '/subpages/program' ? 'text-indigo-600' : 'text-gray-700 hover:text-indigo-600'}`}
+                >
                     Program
                 </a>
-                <a href="/speakers" class={`font-medium transition ${pathname === '/speakers' ? 'text-indigo-600' : 'text-gray-700 hover:text-indigo-600'}`}>
-                    Invited Speakers
-                </a>
-                <!-- <a
-          href="/organisers"
-          class={`font-medium transition ${
-            pathname === "/organisers" 
-              ? "text-indigo-600" 
-              : "text-gray-700 hover:text-indigo-600"
-          }`}
-        >
-          S&O Committee
-        </a> -->
                 <a
-                    href="/application"
-                    class={`font-medium transition ${pathname === '/application' ? 'text-indigo-600' : 'text-gray-700 hover:text-indigo-600'}`}
+                    href="/subpages/organizers"
+                    class={`font-medium transition ${pathname === '/subpages/organizers' ? 'text-indigo-600' : 'text-gray-700 hover:text-indigo-600'}`}
+                >
+                    Organizers
+                </a>
+                <a
+                    href="/subpages/application"
+                    class={`font-medium transition ${pathname === '/subpages/application' ? 'text-indigo-600' : 'text-gray-700 hover:text-indigo-600'}`}
                 >
                     How to Apply
                 </a>

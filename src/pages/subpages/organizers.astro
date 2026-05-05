@@ -1,0 +1,96 @@
+---
+import '../../styles/global.css';
+import Navbar from '../../components/Navbar.astro';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Supervisors and Organizers</title>
+    </head>
+    <body class="pt-16 md:pt-20">
+        <Navbar />
+
+        <!-- Hero -->
+        <section class="relative pt-32 pb-20 text-white text-center bg-cover bg-center bg-no-repeat" style="background-image: url('/images/Ulm2.jpg');">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <!-- semi-transparent overlay -->
+            <div class="relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Supervisors and Organizers</h1>
+                <p class="text-base md:text-lg max-w-2xl mx-auto px-6">
+                    Meet the scientific supervisors the organizers of <strong>Q-LUMEN</strong>
+                </p>
+            </div>
+        </section>
+
+        <!-- Supervisors -->
+        <section class="max-w-6xl mx-auto py-16 px-6">
+            <h2 class="text-2xl font-bold text-center mb-8">Supervisors</h2>
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold">Dr. Julius Mildenberger</h3>
+                    <p class="text-gray-600">Leiden University</p>
+                    <p class="mt-3 text-sm text-gray-500">Quantum Simulation, Lattice Gauge Theories, Quantum Error Correction</p>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold">Dr. Owidiusz Makuta</h3>
+                    <p class="text-gray-600">Leiden University</p>
+                    <p class="mt-3 text-sm text-gray-500">Bell Nonlocality, Quantum Error Correction</p>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold">Dr. Johannes Knörzer</h3>
+                    <p class="text-gray-600">ETH Zurich</p>
+                    <p class="mt-3 text-sm text-gray-500">Quantum Computing, Superconducting Qubits, Many-Body Systems</p>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold">Dr. Patrick Emonts</h3>
+                    <p class="text-gray-600">Ulm University</p>
+                    <p class="mt-3 text-sm text-gray-500">Device Certification, Bell Nonlocality, Numerical Methods</p>
+                </div>
+
+                <a href="/organizers/mirko" class="block">
+                    <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+                        <h3 class="text-xl font-semibold">Dr. Mirko Rossini</h3>
+                        <p class="text-gray-600">Ulm University</p>
+                        <p class="mt-3 text-sm text-gray-500">Quantum Algorithms, Quantum Error Mitigation, Complex System Modelling</p>
+                    </div>
+                </a>
+
+                <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold">Prof. Dario Tamascelli</h3>
+                    <p class="text-gray-600">University of Milano</p>
+                    <p class="mt-3 text-sm text-gray-500">Quantum Simulation, Open Quantum Systems, Numerical Methods</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizers and Coordinators -->
+        <section class="max-w-3xl mx-auto py-12 px-6">
+            <h2 class="text-2xl font-bold text-center mb-8">Organizers &amp; Coordinators</h2>
+            <div class="grid gap-8 sm:grid-cols-2">
+                <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold">Miriam Resch</h3>
+                    <p class="text-gray-600">Ulm University</p>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold">Dennis Herb</h3>
+                    <p class="text-gray-600">Ulm University</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white text-center py-6">
+            <p class="mb-2">Q-LUMEN - the Quantum Leiden Ulm Milan ETH Network</p>
+
+            <div class="flex items-center justify-center space-x-3">
+                <p>Funded by – Global Teaching Lab UGO!</p>
+                <img src="/images/Logo_UGo_white.png" alt="Global Teaching Lab UGO!" class="h-11 w-auto" />
+            </div>
+        </footer>
+    </body>
+</html>

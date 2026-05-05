@@ -1,0 +1,93 @@
+---
+import '../../styles/global.css';
+import Navbar from '../../components/Navbar.astro';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>How to Apply – Q-LUMEN</title>
+    </head>
+    <body class="pt-16 md:pt-20">
+        <Navbar />
+
+        <!-- Hero -->
+        <section class="relative pt-32 pb-20 text-white text-center bg-cover bg-center bg-no-repeat" style="background-image: url('/images/Ulm2.jpg');">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <!-- semi-transparent overlay -->
+            <div class="relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Application</h1>
+                <p class="text-base md:text-lg max-w-2xl mx-auto px-6">
+                    Follow these steps to apply for participating to <strong>Q-LUMEN</strong>
+                </p>
+            </div>
+        </section>
+
+        <!-- Application Information -->
+        <section class="max-w-4xl mx-auto py-16 px-6">
+            <h2 class="text-2xl font-bold mb-6">Eligibility</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                Q-LUMEN is aimed at <strong>Master’s-level students</strong>, especially those in their
+                <strong>first year</strong>, in <strong>physics, quantum science</strong>, and related disciplines such as
+                <strong>computer science or mathematics</strong> with a focus on quantum information.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-6">Application Documents</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                To apply, please send an e-mail to
+                <a href="mailto:dennis.herb@uni-ulm.de" class="text-indigo-600 hover:underline"> dennis.herb@uni-ulm.de </a>
+                with the subject line:
+            </p>
+            <p class="text-lg text-gray-800 font-medium mb-8">“Q-LUMEN application – Name Surname”</p>
+
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Please attach a <strong>single PDF file</strong> containing:
+            </p>
+            <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-8">
+                <li>A short academic CV</li>
+                <li>A motivation letter</li>
+                <li>Your current transcript of records</li>
+            </ol>
+
+            <h2 class="text-2xl font-bold mb-6">Selection Process</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                Applications will be reviewed by the <strong>Q-LUMEN Scientific Board</strong>. Selection will be based primarily on <strong
+                    >scientific qualification</strong
+                > and <strong>motivation to participate</strong>. The cohort will be composed with attention to balance across institutions in order to support
+                diversity and effective international collaboration.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-6">Important Dates</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-8">
+                <li><strong>Programme announcement:</strong> by July 2026</li>
+                <li><strong>Application and selection phase:</strong> completed by September 2026</li>
+                <li><strong>Kickoff meeting in Ulm:</strong> October 2026</li>
+                <li><strong>Research visits to partner institutions:</strong> November/December 2026</li>
+                <li><strong>Mid-term presentation:</strong> Spring 2027</li>
+                <li><strong>Final meeting and presentations:</strong> June 2027</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-6">Number of Participants</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                Approximately <strong>15 students</strong> will be selected for the programme.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-6">What You Gain</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Participants will deepen their knowledge in quantum information, gain experience in research-based learning, and develop intercultural and
+                communication skills through collaboration in international teams. In the best-case scenario, projects may even lead to a joint publication with
+                the hosting institution.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white text-center py-6">
+            <p class="mb-2">Q-LUMEN - the Quantum Leiden Ulm Milan ETH Network</p>
+
+            <div class="flex items-center justify-center space-x-3">
+                <p>Funded by – Global Teaching Lab UGO!</p>
+                <img src="/images/Logo_UGo_white.png" alt="Global Teaching Lab UGO!" class="h-11 w-auto" />
+            </div>
+        </footer>
+    </body>
+</html>
