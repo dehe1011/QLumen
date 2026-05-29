@@ -6,121 +6,216 @@ import Navbar from '../../components/Navbar.astro';
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>About – QLumen 2026</title>
+        <title>About – Q-LUMEN 2026</title>
+
+        <style>
+            :root {
+                --qlumen-purple: #bd7de8ff;
+                --qlumen-orange: #ff9b3dff;
+                --qlumen-purple-soft: #efe1f9ff;
+                --qlumen-orange-soft: #ffd9bbff;
+            }
+
+            .qlumen-gradient {
+                background: linear-gradient(135deg, var(--qlumen-purple), var(--qlumen-orange));
+            }
+
+            .qlumen-soft-gradient {
+                background: linear-gradient(135deg, var(--qlumen-purple-soft), var(--qlumen-orange-soft));
+            }
+
+            .qlumen-purple-text {
+                color: var(--qlumen-purple);
+            }
+
+            .qlumen-orange-text {
+                color: var(--qlumen-orange);
+            }
+
+            .qlumen-purple-border {
+                border-color: var(--qlumen-purple);
+            }
+
+            .qlumen-orange-border {
+                border-color: var(--qlumen-orange);
+            }
+        </style>
     </head>
-    <body class="pt-16 md:pt-20">
+
+    <body class="pt-16 md:pt-20 bg-gray-50">
         <Navbar />
 
         <!-- Hero -->
-        <section class="relative pt-32 pb-20 text-white text-center bg-cover bg-center bg-no-repeat" style="background-image: url('/images/Ulm2.jpg');">
-            <div class="absolute inset-0 bg-black/50"></div>
-            <div class="relative z-10">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">About Q-LUMEN</h1>
-                <p class="text-base md:text-lg max-w-2xl mx-auto px-6">Overview and general information</p>
+        <section class="relative pt-32 pb-24 text-white text-center bg-cover bg-center bg-no-repeat" style="background-image: url('/images/Ulm2.jpg');">
+            <div class="absolute inset-0 bg-black/55"></div>
+            <div class="absolute inset-0 qlumen-gradient opacity-35"></div>
+
+            <div class="relative z-10 max-w-4xl mx-auto px-6">
+                <h1 class="text-4xl md:text-5xl font-bold mb-5">About Q-LUMEN</h1>
+                <p class="text-base md:text-xl text-gray-100 max-w-2xl mx-auto leading-relaxed">
+                    A research-driven quantum information programme connecting students across Europe through real scientific projects, international
+                    collaboration, and close supervision.
+                </p>
             </div>
         </section>
 
-        <!-- About Q-LUMEN -->
-        <section class="max-w-4xl mx-auto py-16 px-6">
-            <!-- Overview -->
-            <h2 class="text-2xl font-bold mb-6">Overview</h2>
+        <!-- About Content -->
+        <section class="max-w-5xl mx-auto py-16 px-6">
+            <!-- Intro Card -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 md:p-10 mb-12">
+                <p class="text-sm font-semibold uppercase tracking-wide qlumen-orange-text mb-3">Quantum research across universities</p>
+                <h2 class="text-2xl font-bold mb-6 text-gray-900">What is Q-LUMEN?</h2>
 
-            <p class="text-lg text-gray-700 leading-relaxed mb-8">
-                <strong>Q-LUMEN</strong> — the <strong>Quantum Leiden Ulm Milan ETH Network</strong> — is an international, research-oriented teaching programme in
-                quantum information. It connects Master’s students with research groups at <strong
-                    >ETH Zurich, Leiden University, Ulm University, and the University of Milano</strong
-                > through supervised research projects carried out in international teams.
-            </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    <strong>Q-LUMEN</strong> — the <strong>Quantum Leiden Ulm Milan ETH Network</strong> — is an international programme for students who want to
+                    explore quantum information beyond the standard lecture format. It brings together students and supervisors from
+                    <strong>ETH Zurich, Leiden University, Ulm University, and the University of Milano</strong>.
+                </p>
 
-            <p class="text-lg text-gray-700 leading-relaxed mb-8">
-                Students work in pairs across institutions and are integrated remotely into a host research group, where they collaborate on a shared scientific
-                question under close supervision. The programme combines sustained virtual collaboration with targeted in-person meetings, creating a structured
-                but flexible environment for research-based learning in an international context.
-            </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    At the centre of Q-LUMEN is a supervised research project. Students work in pairs, choose a scientific question, learn the tools needed to
+                    approach it, and develop their results over several months. The programme is designed for students who are curious about quantum
+                    information, quantum technology, and the way modern research is actually done.
+                </p>
+            </div>
 
-            <p class="text-lg text-gray-700 leading-relaxed mb-12">
-                Q-LUMEN is designed not only to deepen scientific knowledge in quantum information, but also to foster intercultural communication, teamwork,
-                and research skills. By working across academic cultures and institutional boundaries, participants gain experience that goes well beyond a
-                conventional Master’s course and are prepared for future roles in international research environments.
-            </p>
+            <!-- Two Column Overview -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-8">
+                    <h2 class="text-2xl font-bold mb-5 text-gray-900">Who is it for?</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Q-LUMEN is aimed at <strong>advanced Bachelor students and early Master students</strong> in physics, quantum science, computer science, mathematics,
+                        or related fields with an interest in quantum information and quantum technologies.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        You do not need to be an expert already. What matters is a strong motivation to learn, a willingness to work independently, and an
+                        interest in engaging with open scientific questions.
+                    </p>
+                </div>
 
-            <!-- Who It Is For -->
-            <h2 class="text-2xl font-bold mb-6">Who It Is For</h2>
+                <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-8">
+                    <h2 class="text-2xl font-bold mb-5 text-gray-900">How does it work?</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Students work in <strong> teams of two</strong> and are supervised by researchers from the partner universities.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        The programme starts with an in-person kickoff meeting, continues with regular supervision and project work, and ends with scientific
+                        presentations where students share their results with the full Q-LUMEN cohort.
+                    </p>
+                </div>
+            </div>
 
-            <p class="text-lg text-gray-700 leading-relaxed mb-12">
-                The programme is aimed at <strong>Master’s-level students</strong>, especially those in their
-                <strong>first year</strong>, in <strong>physics, quantum science</strong>, and related fields such as <strong
-                    >computer science or mathematics</strong
-                > with a focus on quantum information. Around <strong>15 students</strong> will be selected for each edition, based on scientific qualification and
-                motivation.
-            </p>
+            <!-- Key Features -->
+            <div class="mb-14">
+                <h2 class="text-2xl font-bold mb-8 text-gray-900">What makes Q-LUMEN special?</h2>
 
-            <!-- How the Programme Works -->
-            <h2 class="text-2xl font-bold mb-6">How the Programme Works</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-6">
+                        <div class="w-12 h-1 rounded-full qlumen-gradient mb-5"></div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900">Real research questions</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Projects are connected to current topics in quantum information, from theory and simulation to concepts relevant for emerging
+                            quantum technologies.
+                        </p>
+                    </div>
 
-            <p class="text-lg text-gray-700 leading-relaxed mb-8">
-                Q-LUMEN begins with an in-person kickoff meeting, where students and supervisors meet, research ideas are introduced, and project teams are
-                formed. Students then enter a phase of remotely supervised research, working together across universities and countries over several months.
-                Depending on the project and available resources, this collaboration is complemented by short research visits to partner institutions.
-            </p>
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-6">
+                        <div class="w-12 h-1 rounded-full qlumen-gradient mb-5"></div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900">International teamwork</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            You collaborate with another student and learn how to develop ideas, divide tasks, communicate results, and solve problems.
+                        </p>
+                    </div>
 
-            <p class="text-lg text-gray-700 leading-relaxed mb-12">
-                The programme also includes an intermediate presentation phase for feedback and exchange, followed by a final meeting where students present
-                their results and reflect on their experience. In the best case, the collaboration may even lead to a joint scientific publication.
-            </p>
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-6">
+                        <div class="w-12 h-1 rounded-full qlumen-gradient mb-5"></div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-900">Close supervision</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Each project is guided by researchers who help you enter the topic, understand the methods, and possibly shape your work into a
+                            scientific publication.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <!-- Educational Vision -->
-            <h2 class="text-2xl font-bold mb-6">Educational Vision</h2>
+            <div class="qlumen-soft-gradient rounded-2xl shadow-lg border border-gray-200 p-8 md:p-10 mb-12">
+                <h2 class="text-2xl font-bold mb-6 text-gray-900">Why join?</h2>
 
-            <p class="text-lg text-gray-700 leading-relaxed mb-8">
-                A central idea of Q-LUMEN is that internationalisation should be part of the learning experience itself, not an optional add-on. Rather than
-                treating mobility as a separate activity, the programme embeds international collaboration directly into research-based teaching. English serves
-                as the shared working language, and students learn to communicate scientific ideas across cultural and disciplinary boundaries.
-            </p>
+                <p class="text-lg text-gray-800 leading-relaxed mb-6">
+                    Quantum information is developing quickly, and many of its most exciting questions sit between physics, mathematics, computer science, and
+                    engineering. Q-LUMEN gives students a chance to experience this interdisciplinary field from the inside: by working on a project where the
+                    answer is not already written in a textbook.
+                </p>
 
-            <p class="text-lg text-gray-700 leading-relaxed mb-12">
-                At the same time, Q-LUMEN strengthens long-term academic links between the participating institutions and offers a model that can grow beyond
-                its initial format. The project is conceived as a scalable and transferable approach to internationally connected higher education in quantum
-                science and beyond.
-            </p>
-
-            <!-- Venue Section -->
-            <h2 class="text-2xl font-bold mb-6">Venue</h2>
-            <p class="text-lg text-gray-700 leading-relaxed mb-8">
-                The programme will begin with an <strong>in-person kickoff meeting at Ulm University</strong> in October 2026. Subsequent meetings may take place
-                either in person or online, depending on available resources and the structure of the respective project phase.
-            </p>
-
-            <!-- ZQB Google Maps
-        <div class="mb-16">
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <iframe
-                    src="https://maps.app.goo.gl/966Xx8iXwwvC6bvy5"
-                    width="850"
-                    height="450"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                >
-                </iframe>
+                <p class="text-lg text-gray-800 leading-relaxed">
+                    Along the way, students strengthen their scientific independence, learn to present technical ideas clearly, and build connections with peers
+                    and researchers at other European universities. The goal is not only to learn about quantum information, but to experience how international
+                    research in quantum science works.
+                </p>
             </div>
-        </div> -->
 
-            <!--  About UGo! -->
-            <h2 class="text-2xl font-bold mt-10 mb-6">About Global Teaching Labs UGo!</h2>
+            <!-- Outcomes -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-8">
+                    <h2 class="text-2xl font-bold mb-5 text-gray-900">What you will gain</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Participants deepen their knowledge of quantum information, gain experience with research-level problem solving, and develop practical
+                        skills in scientific collaboration, writing, and presentation. Strong projects may also provide a starting point for further research, a
+                        thesis topic, or even a joint publication.
+                    </p>
+                </div>
 
-            <p class="text-lg text-gray-700 leading-relaxed mb-8">Some text about how great it is.</p>
+                <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-8">
+                    <h2 class="text-2xl font-bold mb-5 text-gray-900">What you will work on</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Project topics may involve theoretical concepts, numerical methods, quantum algorithms, open-system dynamics, quantum simulation,
+                        quantum communication, or other areas of quantum information, depending on the supervisors and research themes of each edition.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Venue -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 md:p-10 mb-12">
+                <p class="text-sm font-semibold uppercase tracking-wide qlumen-purple-text mb-3">Format</p>
+                <h2 class="text-2xl font-bold mb-6 text-gray-900">Venue and programme structure</h2>
+
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Q-LUMEN begins with an <strong>in-person kickoff meeting at Ulm University</strong>. Students meet the cohort, get introduced to possible
+                    research directions, connect with supervisors, and form project teams.
+                </p>
+
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    After the kickoff, teams continue their projects through collaboration and regular supervision. Research visits to partner institutions are
+                    part of the project. The programme concludes with mid-term and final presentations, giving students the opportunity to discuss their work in
+                    a scientific setting.
+                </p>
+            </div>
+
+            <!-- Global Teaching Labs -->
+            <div class="bg-white rounded-2xl shadow-md border-l-4 qlumen-purple-border p-8 md:p-10">
+                <h2 class="text-2xl font-bold mb-6 text-gray-900">Supported by Global Teaching Labs</h2>
+
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Q-LUMEN is supported through the <strong>Global Teaching Labs</strong> framework, which encourages internationally connected teaching and innovative
+                    learning formats.
+                </p>
+
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Within this framework, Q-LUMEN creates a space where students can combine advanced scientific training with international collaboration —
+                    two skills that are increasingly central in quantum science and technology.
+                </p>
+            </div>
         </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white text-center py-6">
+            <p class="mb-2">Q-LUMEN — the Quantum Leiden Ulm Milan ETH Network</p>
+
+            <div class="flex items-center justify-center space-x-3">
+                <p>Funded by Global Teaching Lab UGO!</p>
+                <img src="/images/Logo_UGo_white.png" alt="Global Teaching Lab UGO!" class="h-11 w-auto" />
+            </div>
+        </footer>
     </body>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-6">
-        <p class="mb-2">Q-LUMEN - the Quantum Leiden Ulm Milan ETH Network</p>
-
-        <div class="flex items-center justify-center space-x-3">
-            <p>Funded by – Global Teaching Lab UGO!</p>
-            <img src="/images/Logo_UGo_white.png" alt="Global Teaching Lab UGO!" class="h-11 w-auto" />
-        </div>
-    </footer>
 </html>

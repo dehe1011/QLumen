@@ -7,110 +7,160 @@ import Navbar from '../../components/Navbar.astro';
     <head>
         <meta charset="UTF-8" />
         <title>Program – Q-LUMEN</title>
+
+        <style>
+            :root {
+                --qlumen-purple: #bd7de8ff;
+                --qlumen-orange: #ff9b3dff;
+                --qlumen-purple-soft: #efe1f9ff;
+                --qlumen-orange-soft: #ffd9bbff;
+            }
+
+            .qlumen-gradient {
+                background: linear-gradient(135deg, var(--qlumen-purple), var(--qlumen-orange));
+            }
+
+            .qlumen-soft-gradient {
+                background: linear-gradient(135deg, var(--qlumen-purple-soft), var(--qlumen-orange-soft));
+            }
+
+            .qlumen-purple-text {
+                color: var(--qlumen-purple);
+            }
+
+            .qlumen-orange-text {
+                color: var(--qlumen-orange);
+            }
+
+            .qlumen-timeline-box {
+                background: linear-gradient(135deg, var(--qlumen-purple), var(--qlumen-orange));
+            }
+        </style>
     </head>
-    <body class="pt-16 md:pt-20">
+
+    <body class="pt-16 md:pt-20 bg-gray-50">
         <Navbar />
 
         <!-- Hero Banner -->
         <section class="relative pt-32 pb-20 text-white text-center bg-cover bg-center bg-no-repeat" style="background-image: url('/images/Ulm2.jpg');">
-            <div class="absolute inset-0 bg-black/50"></div>
-            <div class="relative z-10">
+            <div class="absolute inset-0 bg-black/55"></div>
+            <div class="absolute inset-0 qlumen-gradient opacity-35"></div>
+
+            <div class="relative z-10 max-w-4xl mx-auto px-6">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Program</h1>
-                <p class="text-base md:text-lg max-w-2xl mx-auto px-6">Overview of the Q-LUMEN program</p>
+                <p class="text-base md:text-xl max-w-2xl mx-auto leading-relaxed text-gray-100">
+                    From the first project ideas to final research presentations: Q-LUMEN guides students through a full international research experience in
+                    quantum information.
+                </p>
             </div>
         </section>
 
         <!-- Program Timeline -->
         <section class="max-w-7xl mx-auto py-16 px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Program Timeline</h2>
+            <div class="text-center mb-12">
+                <p class="text-sm font-semibold uppercase tracking-wide qlumen-orange-text mb-3">Q-LUMEN 2026–2027</p>
+                <h2 class="text-3xl font-bold text-gray-900 mb-5">Program Timeline</h2>
+                <p class="text-gray-700 text-base md:text-lg max-w-4xl mx-auto leading-relaxed">
+                    Q-LUMEN is built around a supervised research project. Students begin by meeting their cohort and supervisors in Ulm, then continue their
+                    work across institutions through regular collaboration, feedback, and presentations.
+                </p>
+            </div>
 
-            <p class="text-center text-gray-600 mb-12 text-base max-w-4xl mx-auto">
-                The following milestones outline the planned structure of the Q-LUMEN program from the international announcement to the final presentations.
-            </p>
+            <div class="max-w-5xl mx-auto space-y-8">
+                <!-- July–August 2026 -->
+                <div class="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-6 items-stretch">
+                    <div class="qlumen-timeline-box text-white rounded-2xl shadow-md p-6 flex items-center justify-center text-center min-h-full">
+                        <p class="text-lg font-semibold">July–August 2026</p>
+                    </div>
 
-            <div class="space-y-10">
-                <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-                    <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 px-6 text-center">M1 · July 2026</h3>
-                    <div class="p-6">
-                        <p class="font-medium text-gray-900 mb-2">Program Announcement</p>
-                        <p class="text-gray-600 leading-relaxed">
-                            In July 2026 at the latest, Q-LUMEN will be officially announced internationally, particularly across all participating
-                            universities. The call for applications will be distributed through institutional channels and will target first-year Master’s
-                            students in physics, quantum science, and related disciplines. This phase is intended to ensure broad visibility and attract a
-                            diverse, highly qualified pool of applicants.
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 md:p-7 flex flex-col justify-center">
+                        <p class="font-semibold text-gray-900 mb-2">Application and selection</p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Applications are due by <strong>15 July 2026</strong>. Selected students will be notified by
+                            <strong>15 August 2026</strong>. We are looking for motivated students with a strong interest in quantum information, quantum
+                            technology, and research-based learning.
                         </p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-                    <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 px-6 text-center">M2 · September 2026</h3>
-                    <div class="p-6">
-                        <p class="font-medium text-gray-900 mb-2">Selection of Students</p>
-                        <p class="text-gray-600 leading-relaxed">
-                            By September 2026, the selection process will be completed. Students will be chosen based on their academic background, motivation,
-                            and interest in quantum information. Particular attention will be paid to creating a balanced cohort across institutions in order to
-                            support diversity and effective international collaboration.
+                <!-- Early September 2026 -->
+                <div class="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-6 items-stretch">
+                    <div class="qlumen-timeline-box text-white rounded-2xl shadow-md p-6 flex items-center justify-center text-center min-h-full">
+                        <p class="text-lg font-semibold">14.-15. September 2026</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 md:p-7 flex flex-col justify-center">
+                        <p class="font-semibold text-gray-900 mb-2">Kickoff meeting in Ulm</p>
+                        <p class="text-gray-700 leading-relaxed">
+                            The programme begins with an in-person kickoff meeting at Ulm University. Students meet the cohort, get introduced to possible
+                            research directions, talk to supervisors, and form international project teams.
                         </p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-                    <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 px-6 text-center">M3 · October 2026</h3>
-                    <div class="p-6">
-                        <p class="font-medium text-gray-900 mb-2">In-Person Kickoff Meeting at Ulm University and Project Assignment</p>
-                        <p class="text-gray-600 leading-relaxed">
-                            The programme will formally begin in October 2026 with an in-person kickoff meeting at Ulm University. During this event, students
-                            and supervisors will meet, research topics will be introduced, and participants will be assigned to supervisors and international
-                            project teams. This milestone is important for establishing personal connections and defining the scope and expectations of the
-                            research projects.
+                <!-- Mid October – Early November 2026 -->
+                <div class="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-6 items-stretch">
+                    <div class="qlumen-timeline-box text-white rounded-2xl shadow-md p-6 flex items-center justify-center text-center min-h-full">
+                        <p class="text-lg font-semibold">Mid October –<br />Early November 2026</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 md:p-7 flex flex-col justify-center">
+                        <p class="font-semibold text-gray-900 mb-2">Project phase and research visits</p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Student teams begin working on their research questions with regular supervision. Where feasible, short visits to partner
+                            institutions allow students to experience another research environment and strengthen the collaboration within their project team.
                         </p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-                    <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 px-6 text-center">M4 · December 2026</h3>
-                    <div class="p-6">
-                        <p class="font-medium text-gray-900 mb-2">Research Visits to Partner Institutions</p>
-                        <p class="text-gray-600 leading-relaxed">
-                            In December 2026, students will undertake short research visits to the participating groups, where feasible. These visits will
-                            provide early exposure to the research environment, strengthen interaction with supervisors, and support the initial development of
-                            the projects.
+                <!-- April 2027 -->
+                <div class="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-6 items-stretch">
+                    <div class="qlumen-timeline-box text-white rounded-2xl shadow-md p-6 flex items-center justify-center text-center min-h-full">
+                        <p class="text-lg font-semibold">April 2027</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 md:p-7 flex flex-col justify-center">
+                        <p class="font-semibold text-gray-900 mb-2">Mid-term presentations</p>
+                        <p class="text-gray-700 leading-relaxed">
+                            In the online mid-term event, teams present their progress, discuss challenges, and receive feedback from supervisors and peers.
+                            This is a chance to sharpen the research question, compare approaches, and plan the final phase of the project.
                         </p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-                    <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 px-6 text-center">M5 · April 2027</h3>
-                    <div class="p-6">
-                        <p class="font-medium text-gray-900 mb-2">Mid-Term Presentation (Online)</p>
-                        <p class="text-gray-600 leading-relaxed">
-                            The mid-term phase will be marked by an online presentation event in April 2027. Student teams will present their progress, receive
-                            structured feedback from supervisors and peers, and refine their research direction for the final phase of the programme.
-                        </p>
+                <!-- June 2027 -->
+                <div class="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-6 items-stretch">
+                    <div class="qlumen-timeline-box text-white rounded-2xl shadow-md p-6 flex items-center justify-center text-center min-h-full">
+                        <p class="text-lg font-semibold">June 2027</p>
                     </div>
-                </div>
 
-                <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-                    <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 px-6 text-center">M6 · June 2027</h3>
-                    <div class="p-6">
-                        <p class="font-medium text-gray-900 mb-2">Final Meeting and Presentations</p>
-                        <p class="text-gray-600 leading-relaxed">
-                            The programme will conclude in June 2027 with a final meeting, ideally held in person depending on available funding, and possibly
-                            combined with the next kickoff meeting for the 2027 edition. Students will present their final results and reflect on their
-                            experience within Q-LUMEN. This milestone represents the academic culmination of the programme and reinforces the international
-                            collaboration established throughout the project.
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 md:p-7 flex flex-col justify-center">
+                        <p class="font-semibold text-gray-900 mb-2">Final presentations</p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Q-LUMEN concludes with an online final meeting. Student teams present their results to the full cohort and supervisors, reflect on
+                            their research process, and discuss how their work connects to broader questions in quantum information and technology.
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Closing Note -->
+            <div class="max-w-5xl mx-auto mt-12 qlumen-soft-gradient rounded-2xl shadow-md border border-gray-200 p-8 md:p-10">
+                <h2 class="text-2xl font-bold mb-4 text-gray-900">A research experience from start to finish</h2>
+                <p class="text-lg text-gray-800 leading-relaxed">
+                    The programme is designed to give students a realistic view of scientific work: reading into a topic, developing ideas, collaborating across
+                    distance, receiving feedback, and presenting results clearly. It is not only about learning quantum information, but about taking the first
+                    steps into an international research community.
+                </p>
             </div>
         </section>
 
         <!-- Footer -->
         <footer class="bg-gray-900 text-white text-center py-6">
-            <p class="mb-2">Q-LUMEN - the Quantum Leiden Ulm Milan ETH Network</p>
+            <p class="mb-2">Q-LUMEN — the Quantum Leiden Ulm Milan ETH Network</p>
 
             <div class="flex items-center justify-center space-x-3">
-                <p>Funded by – Global Teaching Lab UGO!</p>
+                <p>Funded by Global Teaching Lab UGO!</p>
                 <img src="/images/Logo_UGo_white.png" alt="Global Teaching Lab UGO!" class="h-11 w-auto" />
             </div>
         </footer>
